@@ -19,6 +19,12 @@ def get_disk_usage():
 
 # Sidebar
 with st.sidebar:
+    # Logo at the top
+    try:
+        st.image("Gillsystems_logo_with_donation_qrcodes.png", use_container_width=True)
+    except:
+        pass  # If logo not found, just skip
+    
     st.title("📦 Selected Apps")
     
     # Disk Usage
